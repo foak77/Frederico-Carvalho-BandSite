@@ -1,0 +1,17 @@
+.hero {
+  background-image: url("../assets/images/photo-gallery-6.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: 670px;
+}
+
+.hero__title {
+  color: $text-white;
+  margin-left: 180px;
+}

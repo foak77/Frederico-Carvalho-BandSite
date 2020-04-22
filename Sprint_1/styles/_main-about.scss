@@ -1,0 +1,46 @@
+.about {
+  background-color: $bg-white;
+  display: flex;
+  flex-direction: column;
+  //   justify-content: center;
+  //   align-items: center;
+}
+
+.about__title {
+  padding: 48px 0px;
+  margin-left: 180px;
+}
+
+.about__img {
+  width: 896px;
+  height: 450px;
+  margin: 0px auto 48px auto;
+}
+
+.about__quote {
+  margin: 0px auto;
+  width: 896px;
+}
+
+.about__quote-name {
+  padding: 40px 0px 56px 0px;
+  margin: 0px auto;
+  width: 896px;
+}
+
+.about__theband-title {
+  margin: 0px auto 32px auto;
+  width: 896px;
+}
+
+.about__text-wrapper {
+  margin: 0px auto 48px auto;
+  width: 896px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.about__paragraph {
+  width: 420px;
+}
