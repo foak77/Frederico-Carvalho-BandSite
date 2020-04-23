@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "Avenir";
+  src: url("..assets/font/AvenirNextProLT/Linotype - AvenirNextLTPro-Regular.otf");
+  src: url("..assets/font/AvenirNextProLT/Linotype - AvenirNextLTPro-Demi.otf");
+  src: url("..assets/font/AvenirNextProLT/Linotype - AvenirNextLTPro-Bold.otf");
+}
+body {
+  font-family: "Avenir", Fallback, sans-serif;
+  color: #323232;
+}
+
+.title__header--LVr1 {
+  font-size: 3.75rem;
+  line-height: 4.25rem;
+}
+.title__header--LVr2 {
+  font-size: 2.25rem;
+  line-height: 2.75rem;
+}
+
+.text__header {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text__subheader {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.text__paragraph-comment {
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  font-weight: 100;
+}
+.text__list-contact {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 100;
+}

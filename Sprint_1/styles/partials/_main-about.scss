@@ -1,0 +1,106 @@
+.about {
+  width: 100%;
+  background-color: $text-field-background-fill;
+  display: flex;
+  flex-direction: column;
+}
+
+.about__title {
+  box-sizing: border-box;
+  width: 320;
+  padding: 32px 16px 24px 16px;
+  // margin: 16px;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.about__img {
+  width: 288px;
+  margin: 0px auto 24px auto;
+}
+
+.about__quote {
+  margin: 0px auto;
+  width: 288px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.about__quote-name {
+  margin: 0px auto;
+  width: 288px;
+  padding: 32px 0px 40px 0px;
+  // margin-left: 16px;
+}
+
+.about__theband-title {
+  margin: 0px auto 24px auto;
+  width: 288px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.about__text-wrapper {
+  margin: 0px auto 40px auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.about__paragraph {
+  width: 288px;
+  &--first {
+    width: 288px;
+    margin-bottom: 24px;
+  }
+}
+
+// .about {
+//   background-color: $bg-white;
+//   display: flex;
+//   flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+// }
+
+// .about__title {
+//   padding: 48px 0px;
+//   margin-left: 180px;
+// }
+
+// .about__img {
+//   width: 896px;
+//   height: 450px;
+//   margin: 0px auto 48px auto;
+// }
+
+// .about__quote {
+//   margin: 0px auto;
+//   width: 896px;
+// }
+
+// .about__quote-name {
+//   padding: 40px 0px 56px 0px;
+//   margin: 0px auto;
+//   width: 896px;
+// }
+
+// .about__theband-title {
+//   margin: 0px auto 32px auto;
+//   width: 896px;
+// }
+
+// .about__text-wrapper {
+//   margin: 0px auto 48px auto;
+//   width: 896px;
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: space-between;
+// }
+
+// .about__paragraph {
+//   width: 420px;
+// }
