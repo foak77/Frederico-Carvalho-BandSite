@@ -1,9 +1,24 @@
 @font-face {
   font-family: "Avenir";
-  src: url("..assets/font/AvenirNextProLT/Linotype - AvenirNextLTPro-Regular.otf");
-  src: url("..assets/font/AvenirNextProLT/Linotype - AvenirNextLTPro-Demi.otf");
-  src: url("..assets/font/AvenirNextProLT/Linotype - AvenirNextLTPro-Bold.otf");
+  src: url("../assets/font/AvenirNextProLT/Linotype - AvenirNextLTPro-Regular.otf");
+  // src: url("./assets/font/AvenirNextProLT/Linotype - AvenirNextLTPro-Demi.otf");
+  // src: url("./assets/font/AvenirNextProLT/Linotype - AvenirNextLTPro-Bold.otf");
 }
+
+@font-face {
+  font-family: "Avenir";
+  // src: url("./assets/font/AvenirNextProLT/Linotype - AvenirNextLTPro-Regular.otf");
+  src: url("../assets/font/AvenirNextProLT/Linotype - AvenirNextLTPro-Demi.otf");
+  //   src: url("./assets/font/AvenirNextProLT/Linotype - AvenirNextLTPro-Bold.otf");
+}
+
+@font-face {
+  font-family: "Avenir";
+  // src: url("./assets/font/AvenirNextProLT/Linotype - AvenirNextLTPro-Regular.otf");
+  // src: url("./assets/font/AvenirNextProLT/Linotype - AvenirNextLTPro-Demi.otf");
+  src: url("../assets/font/AvenirNextProLT/Linotype - AvenirNextLTPro-Bold.otf");
+}
+
 body {
   font-family: "Avenir", Fallback, sans-serif;
   color: #323232;
