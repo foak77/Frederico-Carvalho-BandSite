@@ -3,10 +3,10 @@
   background-color: $text-field-background-fill;
   display: flex;
   flex-direction: column;
+  align-items: center;
   &__title {
-    box-sizing: border-box;
-    width: 320;
-    padding: 32px 16px 24px 16px;
+    width: 288px;
+    padding: 32px 0px 24px 0px;
     font-size: 1.5rem;
     line-height: 2rem;
   }
@@ -15,15 +15,15 @@
     margin: 0px auto 24px auto;
   }
   &__quote {
-    margin: 0px auto;
+    margin: 0px auto 32px auto;
     width: 288px;
     font-size: 1rem;
     line-height: 1.5rem;
   }
   &__quote-name {
-    margin: 0px auto;
+    margin: 0px auto 40px auto;
     width: 288px;
-    padding: 32px 0px 40px 0px;
+    // padding: 0px 0px 40px 0px;
   }
   &__theband-title {
     margin: 0px auto 24px auto;
@@ -46,8 +46,60 @@
       width: 288px;
       margin-bottom: 24px;
     }
-    @include tablet {
-      background-color: red;
+  }
+  @include tablet {
+    // width: 100%;
+    // background-color: $text-field-background-fill;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    &__title {
+      box-sizing: border-box;
+      // margin-left: 24px;
+      width: 720px;
+      padding: 32px 0px 24px 0px;
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+    &__img {
+      width: 720px;
+      height: 362px;
+      // margin: 0px auto 24px auto;
+    }
+    &__quote {
+      // margin: 0px auto;
+      width: 720px;
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+    &__quote-name {
+      // margin: 0px auto;
+      width: 720px;
+      // padding: 32px 0px 40px 0px;
+    }
+    &__theband-title {
+      // margin: 0px auto 24px auto;
+      margin-bottom: 24px;
+      width: 720px;
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+    &__text-wrapper {
+      margin: 0px auto 40px auto;
+      width: 720px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    &__paragraph {
+      width: 348px;
+      &--first {
+        width: 348px;
+        margin-right: 24px;
+        margin-bottom: 24px;
+      }
     }
   }
 }
