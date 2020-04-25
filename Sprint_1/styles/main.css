@@ -221,61 +221,14 @@ body {
             align-items: flex-start;
   }
   .navigation__link-biog {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     width: 80px;
     height: 80px;
     margin-left: 56px;
-  }
-  .navigation__link-biog--medias {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 80px;
-    height: 80px;
-    margin-left: 56px;
-    border-bottom: 3px solid #fafafa;
   }
   .navigation__link-show {
-    color: #afafaf;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     width: 80px;
     height: 80px;
     margin-left: 56px;
-  }
-  .navigation__link-show--medias {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 80px;
-    height: 80px;
   }
 }
 
@@ -285,7 +238,7 @@ body {
 }
 
 .hero {
-  background-image: url("../assets/images/photo-gallery-6.jpg");
+  background-image: url("../assets/images/Photo-gallery-10.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -367,7 +320,7 @@ body {
 .about__quote {
   margin: 0px auto 32px auto;
   width: 288px;
-  font-family: AvenirDemi;
+  font-family: AvenirBold;
 }
 
 .about__quote-name {
@@ -381,7 +334,7 @@ body {
   width: 288px;
   font-size: 1rem;
   line-height: 1.5rem;
-  font-family: AvenirDemi;
+  font-family: AvenirBold;
 }
 
 .about__text-wrapper {
@@ -443,21 +396,9 @@ body {
   .about__text-wrapper {
     margin: 0px auto 40px auto;
     width: 720px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
   }
   .about__paragraph {
     width: 348px;
@@ -507,21 +448,6 @@ body {
   .about__text-wrapper {
     margin: 0px auto 40px auto;
     width: 896px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
   }
   .about__paragraph {
     width: 420px;
@@ -576,6 +502,7 @@ body {
   padding: 32px 0px 24px 0px;
   font-size: 1.5rem;
   line-height: 2rem;
+  font-family: AvenirBold;
 }
 
 .gallery__imgs {
@@ -681,6 +608,7 @@ body {
 .footer__title {
   color: #fafafa;
   width: 288px;
+  font-family: AvenirBold;
 }
 
 .footer__social {
@@ -808,7 +736,7 @@ body {
     width: 220px;
   }
   .footer .footer__social {
-    width: 660px;
+    width: 684px;
     padding-top: 0px;
   }
   .footer .footer__logo {
