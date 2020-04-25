@@ -1,22 +1,21 @@
 @font-face {
-  font-family: "Avenir";
-  src: url("../assets/font/AvenirNextProLT/Linotype - AvenirNextLTPro-Regular.otf");
-  // src: url("./assets/font/AvenirNextProLT/Linotype - AvenirNextLTPro-Demi.otf");
-  // src: url("./assets/font/AvenirNextProLT/Linotype - AvenirNextLTPro-Bold.otf");
+  font-family: "AvenirRegular";
+  src: url("../assets/font/AvenirNextProLT/LinotypeAvenirNextLTProRegular.otf");
 }
 
 @font-face {
-  font-family: "Avenir";
-  // src: url("./assets/font/AvenirNextProLT/Linotype - AvenirNextLTPro-Regular.otf");
-  src: url("../assets/font/AvenirNextProLT/Linotype - AvenirNextLTPro-Demi.otf");
-  //   src: url("./assets/font/AvenirNextProLT/Linotype - AvenirNextLTPro-Bold.otf");
+  font-family: "AvenirDemi";
+  src: url("../assets/font/AvenirNextProLT/LinotypeAvenirNextLTProDemi.otf");
 }
 
 @font-face {
-  font-family: "Avenir";
-  // src: url("./assets/font/AvenirNextProLT/Linotype - AvenirNextLTPro-Regular.otf");
-  // src: url("./assets/font/AvenirNextProLT/Linotype - AvenirNextLTPro-Demi.otf");
-  src: url("../assets/font/AvenirNextProLT/Linotype - AvenirNextLTPro-Bold.otf");
+  font-family: "AvenirBold";
+  src: url("../assets/font/AvenirNextProLT/LinotypeAvenirNextLTProBold.otf");
+}
+
+@font-face {
+  font-family: "AvenirHeavy";
+  src: url("../assets/font/AvenirNextProLT/LinotypeAvenirNextLTProHeavy.otf");
 }
 
 body {
@@ -24,31 +23,49 @@ body {
   color: #323232;
 }
 
-.title__header--LVr1 {
-  font-size: 3.75rem;
-  line-height: 4.25rem;
+// DESKTOP / TABLET FONT SIZE
+.font-heroHeader {
+  font-size: 60px;
+  line-height: 68px;
 }
-.title__header--LVr2 {
-  font-size: 2.25rem;
-  line-height: 2.75rem;
+.font-headerH1 {
+  font-size: 36px;
+  line-height: 44px;
 }
-
-.text__header {
-  font-size: 1.5rem;
-  line-height: 2rem;
+.font-headerH2 {
+  font-size: 24px;
+  line-height: 32px;
 }
-
-.text__subheader {
-  font-size: 1rem;
-  line-height: 1.5rem;
+.font-subheaderH3 {
+  font-size: 16px;
+  line-height: 24px;
 }
-.text__paragraph-comment {
-  font-size: 0.875rem;
-  line-height: 1.375rem;
-  font-weight: 100;
+.font-paragraphCcommentH4 {
+  font-size: 14px;
+  line-height: 22px;
 }
-.text__list-contact {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  font-weight: 100;
+.font-listContactInfoH5 {
+  font-size: 14px;
+  line-height: 20px;
+}
+// MOBILE FONT SIZE
+.font-headerH1-mob {
+  font-size: 24px;
+  line-height: 32px;
+}
+.font-subheaderH2-mob {
+  font-size: 14px;
+  line-height: 22px;
+}
+.font-paragraphH4-mob {
+  font-size: 13px;
+  line-height: 18px;
+}
+.font-listContactInfoH4-mob {
+  font-size: 13px;
+  line-height: 18px;
+}
+.font-labelH5 {
+  font-size: 12px;
+  line-height: 20px;
 }

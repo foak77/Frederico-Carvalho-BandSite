@@ -2,43 +2,91 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   &__link-biog {
+    box-sizing: border-box;
+    font-family: AvenirBold;
     color: $text-field-background-fill;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
     width: 160px;
-    height: 25px;
+    height: 24px;
     border-bottom: 3px solid $text-field-background-fill;
   }
   &__link-show {
+    box-sizing: border-box;
+    font-family: AvenirBold;
     color: $text-label-style-color;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
     width: 160px;
-    height: 25px;
+    height: 24px;
   }
   @include tablet {
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
     &__link-biog {
-      color: $text-field-background-fill;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 160px;
+      // color: $text-field-background-fill;
+      // display: flex;
+      // text-align: center;
+      // justify-content: center;
+      // align-items: center;
+      // width: 160px;
+      // height: 80px;
+      // border-bottom: 0px;
+      // border-bottom: 3px solid $text-field-background-fill;
+      // &--medias {
+      // display: flex;
+      // justify-content: flex-start;
+      // align-items: center;
+      width: 90px;
       height: 80px;
-      border-bottom: 0px;
+      margin-right: 32px;
+      border-bottom: 3px solid $text-field-background-fill;
+      // }
+    }
+    &__link-show {
+      // color: $text-label-style-color;
+      // display: flex;
+      // justify-content: flex-start;
+      // align-items: center;
+      // width: 160px;
+      // height: 80px;
+      // &--medias {
+      // display: flex;
+      // justify-content: flex-start;
+      // align-items: center;
+      width: 90px;
+      height: 80px;
+      // FUTURE BORDER BOTTOM HERE
+      // }
+    }
+  }
+  @include desktop {
+    // flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    &__link-biog {
+      // color: $text-field-background-fill;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      width: 80px;
+      height: 80px;
+      margin-left: 56px;
       &--medias {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
-        width: 90px;
+        width: 80px;
         height: 80px;
+        margin-left: 56px;
         border-bottom: 3px solid $text-field-background-fill;
       }
     }
@@ -47,12 +95,14 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 160px;
+      width: 80px;
       height: 80px;
+      margin-left: 56px;
       &--medias {
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 80px;
         height: 80px;
       }
     }

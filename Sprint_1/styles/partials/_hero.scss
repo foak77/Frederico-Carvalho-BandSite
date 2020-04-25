@@ -11,9 +11,11 @@
   height: 183px;
   &__title {
     color: $text-field-border;
+    width: 200px;
     margin-left: 16px;
-    font-size: 1.5rem;
-    line-height: 2rem;
+    font-family: AvenirBold;
+    // font-size: 24px;
+    // line-height: 32px;
   }
   @include tablet {
     // background-image: url("../assets/images/photo-gallery-6.jpg");
@@ -27,10 +29,30 @@
     // width: 100%;
     height: 400px;
     &__title {
-      color: $text-field-border;
+      // color: $text-field-border;
+      width: 550px;
       margin-left: 24px;
-      font-size: 1.5rem;
-      line-height: 2rem;
+      font-size: 60px;
+      line-height: 68px;
+    }
+  }
+  @include desktop {
+    // background-image: url("../assets/images/photo-gallery-6.jpg");
+    // background-size: cover;
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: flex-start;
+    // width: 100%;
+    height: 670px;
+    &__title {
+      // color: $text-field-border;
+      width: 700px;
+      margin-left: 180px;
+      font-size: 78px;
+      line-height: 95px;
     }
   }
 }
