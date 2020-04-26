@@ -26,7 +26,7 @@
 }
 
 body {
-  font-family: "Avenir", Fallback, sans-serif;
+  font-family: "AvenirRegular", Fallback, sans-serif;
   color: #323232;
 }
 
@@ -165,12 +165,13 @@ body {
           align-items: center;
   text-decoration: none;
   width: 160px;
-  height: 24px;
+  padding: 0px 0px 5px 0px;
   border-bottom: 3px solid #fafafa;
 }
 
 .navigation__link-biog:hover {
   color: #0065ad;
+  border-bottom: 3px solid #0065ad;
 }
 
 .navigation__link-show {
@@ -189,7 +190,7 @@ body {
           align-items: center;
   text-decoration: none;
   width: 160px;
-  height: 24px;
+  padding: 0px 0px 5px 0px;
 }
 
 .navigation__link-show:hover {
@@ -233,6 +234,7 @@ body {
   .navigation__link-biog {
     width: 80px;
     height: 80px;
+    margin-right: 0px;
     margin-left: 56px;
   }
   .navigation__link-show {
@@ -271,7 +273,7 @@ body {
 
 .hero__title {
   color: #e1e1e1;
-  width: 200px;
+  width: 201px;
   margin-left: 16px;
   font-family: AvenirBold;
 }
