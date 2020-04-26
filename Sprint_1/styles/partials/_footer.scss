@@ -6,7 +6,8 @@
   justify-content: flex-start;
   align-items: center;
   &__top {
-    width: 288px;
+    width: 90%;
+    // width: 288px;
     padding: 48px 0px 40px 0px;
     display: flex;
     flex-direction: row;
@@ -16,11 +17,13 @@
   }
   &__title {
     color: $text-field-background-fill;
-    width: 288px;
+    width: 90%;
+    // width: 288px;
     font-family: AvenirBold;
   }
   &__social {
-    width: 288px;
+    // width: 288px;
+    width: 90%;
     padding-top: 24px;
   }
   &__social-icons {
@@ -32,11 +35,25 @@
     display: none;
   }
   &__mid {
-    width: 288px;
+    width: 90%;
+    // width: 288px;
     margin-bottom: 32px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    &--col1 {
+      width: 288px;
+      margin-right: 24px;
+      margin-bottom: 24px;
+    }
+    &--col2 {
+      width: 288px;
+      margin-right: 24px;
+      margin-bottom: 24px;
+    }
+    &--col3 {
+      width: 288px;
+    }
   }
   &__text {
     color: $text-field-background-fill;
@@ -61,8 +78,17 @@
   }
   &__copyright {
     color: $text-field-background-fill;
-    width: 288px;
+    width: 90%;
+    // width: 288px;
     margin-bottom: 32px;
+  }
+  &__mailto {
+    font-family: AvenirRegular;
+    color: $text-field-background-fill;
+    text-decoration: none;
+    &:hover {
+      color: $primary-cta-and-text-link;
+    }
   }
   @include tablet {
     &__top {

@@ -15,6 +15,9 @@
     width: 160px;
     height: 24px;
     border-bottom: 3px solid $text-field-background-fill;
+    &:hover {
+      color: $primary-cta-hover;
+    }
   }
   &__link-show {
     box-sizing: border-box;
@@ -26,6 +29,9 @@
     text-decoration: none;
     width: 160px;
     height: 24px;
+    &:hover {
+      color: $primary-cta-hover;
+    }
   }
   @include tablet {
     flex-direction: row;

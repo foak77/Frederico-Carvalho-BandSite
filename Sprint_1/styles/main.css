@@ -1,6 +1,8 @@
 * {
   margin: 0px;
   padding: 0px;
+  -webkit-transition: 0.25s linear;
+  transition: 0.25s linear;
 }
 
 @font-face {
@@ -167,6 +169,10 @@ body {
   border-bottom: 3px solid #fafafa;
 }
 
+.navigation__link-biog:hover {
+  color: #0065ad;
+}
+
 .navigation__link-show {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -184,6 +190,10 @@ body {
   text-decoration: none;
   width: 160px;
   height: 24px;
+}
+
+.navigation__link-show:hover {
+  color: #0065ad;
 }
 
 @media screen and (min-width: 768px) {
@@ -306,32 +316,32 @@ body {
 }
 
 .about__title {
-  width: 288px;
+  width: 90%;
   padding: 32px 0px 24px 0px;
   font-family: AvenirBold;
 }
 
 .about__img {
-  width: 288px;
-  height: 162px;
+  width: 90%;
+  height: auto;
   margin: 0px auto 24px auto;
 }
 
 .about__quote {
   margin: 0px auto 32px auto;
-  width: 288px;
+  width: 90%;
   font-family: AvenirBold;
 }
 
 .about__quote-name {
   margin: 0px auto 40px auto;
-  width: 288px;
+  width: 90%;
   font-family: AvenirDemi;
 }
 
 .about__theband-title {
   margin: 0px auto 24px auto;
-  width: 288px;
+  width: 90%;
   font-size: 1rem;
   line-height: 1.5rem;
   font-family: AvenirBold;
@@ -349,22 +359,22 @@ body {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
 }
 
 .about__paragraph {
-  width: 288px;
+  width: 90%;
   font-family: AvenirRegular;
 }
 
 .about__paragraph--first {
   font-family: AvenirRegular;
-  width: 288px;
+  width: 90%;
   margin-bottom: 24px;
 }
 
@@ -482,7 +492,7 @@ body {
 }
 
 .gallery__imgs-wrapper {
-  width: 320px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -498,7 +508,7 @@ body {
 }
 
 .gallery__title {
-  width: 288px;
+  width: 90%;
   padding: 32px 0px 24px 0px;
   font-size: 1.5rem;
   line-height: 2rem;
@@ -506,8 +516,16 @@ body {
 }
 
 .gallery__imgs {
-  width: 288px;
+  width: 90%;
+  height: auto;
   margin: 0px auto 16px auto;
+}
+
+.gallery__imgs:hover {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 @media screen and (min-width: 768px) {
@@ -586,7 +604,7 @@ body {
 }
 
 .footer__top {
-  width: 288px;
+  width: 90%;
   padding: 48px 0px 40px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -607,12 +625,12 @@ body {
 
 .footer__title {
   color: #fafafa;
-  width: 288px;
+  width: 90%;
   font-family: AvenirBold;
 }
 
 .footer__social {
-  width: 288px;
+  width: 90%;
   padding-top: 24px;
 }
 
@@ -627,7 +645,7 @@ body {
 }
 
 .footer__mid {
-  width: 288px;
+  width: 90%;
   margin-bottom: 32px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -638,6 +656,22 @@ body {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.footer__mid--col1 {
+  width: 288px;
+  margin-right: 24px;
+  margin-bottom: 24px;
+}
+
+.footer__mid--col2 {
+  width: 288px;
+  margin-right: 24px;
+  margin-bottom: 24px;
+}
+
+.footer__mid--col3 {
+  width: 288px;
 }
 
 .footer__text {
@@ -669,8 +703,18 @@ body {
 
 .footer__copyright {
   color: #fafafa;
-  width: 288px;
+  width: 90%;
   margin-bottom: 32px;
+}
+
+.footer__mailto {
+  font-family: AvenirRegular;
+  color: #fafafa;
+  text-decoration: none;
+}
+
+.footer__mailto:hover {
+  color: #0095ff;
 }
 
 @media screen and (min-width: 768px) {

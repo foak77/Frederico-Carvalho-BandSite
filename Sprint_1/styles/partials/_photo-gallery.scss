@@ -6,22 +6,30 @@
   align-items: center;
   background-color: $text-field-border;
   &__imgs-wrapper {
-    width: 320px;
+    // width: 320px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
   }
   &__title {
-    width: 288px;
+    width: 90%;
+    // width: 288px;
     padding: 32px 0px 24px 0px;
     font-size: 1.5rem;
     line-height: 2rem;
     font-family: AvenirBold;
   }
   &__imgs {
-    width: 288px;
+    // width: 288px;
+    width: 90%;
+    height: auto;
     margin: 0px auto 16px auto;
+    &:hover {
+      filter: grayscale(100%);
+      transition: 0.5s ease-in-out;
+    }
   }
 
   @include tablet {
