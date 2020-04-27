@@ -1,0 +1,71 @@
+.navigation {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  &__link-biog {
+    box-sizing: border-box;
+    font-family: AvenirBold;
+    color: $text-field-background-fill;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 160px;
+    padding: 0px 0px 5px 0px;
+    border-bottom: 3px solid $text-field-background-fill;
+    &:hover {
+      color: $primary-cta-hover;
+      border-bottom: 3px solid $primary-cta-hover;
+    }
+  }
+  &__link-show {
+    box-sizing: border-box;
+    font-family: AvenirBold;
+    color: $text-label-style-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 160px;
+    padding: 0px 0px 5px 0px;
+    &:hover {
+      color: $primary-cta-hover;
+    }
+  }
+  @include tablet {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    &__link-biog {
+      width: 90px;
+      height: 80px;
+      margin-right: 32px;
+      border-bottom: 3px solid $text-field-background-fill;
+    }
+    &__link-show {
+      width: 90px;
+      height: 80px;
+    }
+  }
+  @include desktop {
+    justify-content: flex-start;
+    align-items: flex-start;
+    &__link-biog {
+      width: 80px;
+      height: 80px;
+      margin-right: 0px;
+      margin-left: 56px;
+    }
+    &__link-show {
+      width: 80px;
+      height: 80px;
+      margin-left: 56px;
+    }
+  }
+}
+.text__list-contact {
+  color: #ffffff;
+  text-decoration: none;
+}
