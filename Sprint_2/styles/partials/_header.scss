@@ -19,7 +19,10 @@
   }
   @include desktop {
     &__logo {
-      margin: 0px 56px 0px 180px;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      margin: 0px 0px 0px 180px;
     }
   }
 }

@@ -1,0 +1,107 @@
+.conversation {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $text-field-background-fill;
+  &__title {
+    // width: 90%;
+    width: 288px;
+    padding: 32px 0px 40px 0px;
+    font-family: AvenirBold;
+  }
+  &__form {
+    box-sizing: border-box;
+    width: 288px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    // border-bottom: 1px solid $text-field-border;
+    margin-bottom: 24px;
+  }
+  &__label-name {
+    color: $text-label-style-color;
+    margin-left: 64px;
+    font-family: AvenirDemi;
+    margin-bottom: 8px;
+  }
+  &__form-input-name {
+    width: 288px;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+    margin-bottom: 24px;
+  }
+  &__img {
+    background-color: gray;
+    width: 48px;
+    height: 48px;
+    // margin-right: 20px;
+  }
+  &__input-name {
+    width: 224px;
+    height: 48px;
+    // background-color: red;
+    border: 1px solid $text-field-border;
+    border-radius: 4px;
+  }
+  &__label-comment {
+    color: $text-label-style-color;
+    margin-left: 64px;
+    font-family: AvenirDemi;
+  }
+  &__form-input-comment {
+    width: 224px;
+    height: 96px;
+    // background-color: red;
+    border: 1px solid $text-field-border;
+    border-radius: 4px;
+    margin-left: 64px;
+    margin-bottom: 24px;
+  }
+  &__btn {
+    margin-left: 128px;
+  }
+  // section
+  &__section {
+    width: 288px;
+    border-top: 1px solid $text-field-border;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 24px;
+    margin-bottom: 24px;
+  }
+  &__section-left {
+    width: 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  &__output-img {
+    width: 38px;
+    height: 38px;
+    background-color: gray;
+  }
+  &__section-right {
+    width: 234px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  &__section-right-nameDate {
+    width: 234px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 16px;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
