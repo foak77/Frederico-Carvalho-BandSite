@@ -37,7 +37,10 @@
     margin-bottom: 24px;
   }
   &__img {
-    background-color: gray;
+    background-image: url(../assets/images/Mohan-muruge.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50px;
     width: 48px;
     height: 48px;
     // margin-right: 20px;
@@ -45,20 +48,21 @@
   &__input-name {
     width: 224px;
     height: 48px;
-    // background-color: red;
-    border: 1px solid $text-field-border;
+    background-color: $text-field-border;
+    border: 1px solid $text-label-style-color;
     border-radius: 4px;
   }
   &__label-comment {
     color: $text-label-style-color;
     margin-left: 64px;
     font-family: AvenirDemi;
+    margin-bottom: 8px;
   }
   &__form-input-comment {
     width: 224px;
     height: 96px;
-    // background-color: red;
-    border: 1px solid $text-field-border;
+    background-color: $text-field-border;
+    border: 1px solid $text-label-style-color;
     border-radius: 4px;
     margin-left: 64px;
     margin-bottom: 24px;
@@ -88,6 +92,7 @@
     width: 38px;
     height: 38px;
     background-color: gray;
+    border-radius: 50px;
   }
   &__section-right {
     width: 234px;
@@ -103,5 +108,9 @@
     margin-bottom: 16px;
     justify-content: space-between;
     align-items: center;
+    font-family: AvenirDemi;
+  }
+  &__output-date {
+    color: #afafaf;
   }
 }
