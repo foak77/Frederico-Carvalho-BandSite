@@ -2,10 +2,19 @@
   background-color: $text-field-background-fill;
   width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
+  &__wrap {
+    width: 288px;
+    // background-color: red;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
   &__title {
     // width: 90%;
     width: 288px;
@@ -35,7 +44,10 @@
     // width: 288px;
     // background-color: red;
   }
-
+  &__wrap-bottom {
+    width: 288px;
+    // background-color: yellow;
+  }
   &__schedules-frame {
     // background-color: salmon;
     display: flex;
@@ -92,6 +104,10 @@
     margin-bottom: 16px;
   }
   @include tablet {
+    &__wrap {
+      width: 720px;
+      // background-color: red;
+    }
     &__title {
       // width: 90%;
       //   background-color: skyblue;
@@ -131,6 +147,119 @@
       font-family: AvenirDemi;
       color: $text-label-style-color;
       // background-color: red;
+    }
+    &__wrap-bottom {
+      width: 720px;
+      // background-color: yellow;
+    }
+    &__schedules-frame {
+      //   background-color: salmon;
+      width: 720px;
+      border-bottom: 1px solid $text-field-border;
+      margin-bottom: 24px;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-end;
+      flex-wrap: wrap;
+    }
+    &__date-wrap {
+      width: 224px;
+      //   background-color: red;
+    }
+    &__date-title {
+      display: none;
+      font-family: AvenirDemi;
+      color: $text-label-style-color;
+
+      margin-bottom: 16px;
+    }
+    &__date {
+      font-family: AvenirRegular;
+      margin-bottom: 24px;
+    }
+    &__venue-wrap {
+      width: 124px;
+      //   background-color: green;
+    }
+    &__venue-title {
+      display: none;
+      font-family: AvenirDemi;
+      color: $text-label-style-color;
+      margin-bottom: 16px;
+    }
+    &__venue {
+      font-family: AvenirRegular;
+      margin-bottom: 24px;
+    }
+    &__location-wrap {
+      width: 124px;
+      //   background-color: blue;
+    }
+    &__location-title {
+      display: none;
+      font-family: AvenirDemi;
+      color: $text-label-style-color;
+      margin-bottom: 16px;
+    }
+    &__location {
+      font-family: AvenirRegular;
+      margin-bottom: 24px;
+    }
+    &__button {
+      font-family: AvenirBold;
+      width: 160px;
+      height: 48px;
+      margin: 0px 0px 8px 88px;
+    }
+  }
+  @include desktop {
+    &__wrap {
+      width: 896px;
+      // background-color: red;
+    }
+    &__title {
+      // width: 90%;
+      // background-color: skyblue;
+      width: 176px;
+      padding: 32px 0px 40px 0px;
+      font-family: AvenirBold;
+    }
+    &__schedules-frame-wrap {
+      //   background-color: salmon;
+      width: 720px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    &__date-wrap-MOB {
+      display: block;
+      width: 224px;
+      margin-bottom: 24px;
+      font-family: AvenirDemi;
+      color: $text-label-style-color;
+      // background-color: red;
+    }
+    &__venue-wrap-MOB {
+      display: block;
+      width: 124px;
+      margin-bottom: 24px;
+      font-family: AvenirDemi;
+      color: $text-label-style-color;
+      // background-color: red;
+    }
+    &__location-wrap-MOB {
+      display: block;
+      width: 124px;
+      margin-bottom: 24px;
+      font-family: AvenirDemi;
+      color: $text-label-style-color;
+      // background-color: red;
+    }
+    &__wrap-bottom {
+      width: 720px;
+      // background-color: yellow;
     }
     &__schedules-frame {
       //   background-color: salmon;

@@ -328,16 +328,35 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.shows__wrap {
+  width: 288px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -375,6 +394,10 @@ body {
 
 .shows__location-wrap-MOB {
   display: none;
+}
+
+.shows__wrap-bottom {
+  width: 288px;
 }
 
 .shows__schedules-frame {
@@ -442,6 +465,9 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .shows__wrap {
+    width: 720px;
+  }
   .shows__title {
     width: 720px;
     padding: 32px 0px 40px 0px;
@@ -485,6 +511,124 @@ body {
     margin-bottom: 24px;
     font-family: AvenirDemi;
     color: #afafaf;
+  }
+  .shows__wrap-bottom {
+    width: 720px;
+  }
+  .shows__schedules-frame {
+    width: 720px;
+    border-bottom: 1px solid #e1e1e1;
+    margin-bottom: 24px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .shows__date-wrap {
+    width: 224px;
+  }
+  .shows__date-title {
+    display: none;
+    font-family: AvenirDemi;
+    color: #afafaf;
+    margin-bottom: 16px;
+  }
+  .shows__date {
+    font-family: AvenirRegular;
+    margin-bottom: 24px;
+  }
+  .shows__venue-wrap {
+    width: 124px;
+  }
+  .shows__venue-title {
+    display: none;
+    font-family: AvenirDemi;
+    color: #afafaf;
+    margin-bottom: 16px;
+  }
+  .shows__venue {
+    font-family: AvenirRegular;
+    margin-bottom: 24px;
+  }
+  .shows__location-wrap {
+    width: 124px;
+  }
+  .shows__location-title {
+    display: none;
+    font-family: AvenirDemi;
+    color: #afafaf;
+    margin-bottom: 16px;
+  }
+  .shows__location {
+    font-family: AvenirRegular;
+    margin-bottom: 24px;
+  }
+  .shows__button {
+    font-family: AvenirBold;
+    width: 160px;
+    height: 48px;
+    margin: 0px 0px 8px 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .shows__wrap {
+    width: 896px;
+  }
+  .shows__title {
+    width: 176px;
+    padding: 32px 0px 40px 0px;
+    font-family: AvenirBold;
+  }
+  .shows__schedules-frame-wrap {
+    width: 720px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .shows__date-wrap-MOB {
+    display: block;
+    width: 224px;
+    margin-bottom: 24px;
+    font-family: AvenirDemi;
+    color: #afafaf;
+  }
+  .shows__venue-wrap-MOB {
+    display: block;
+    width: 124px;
+    margin-bottom: 24px;
+    font-family: AvenirDemi;
+    color: #afafaf;
+  }
+  .shows__location-wrap-MOB {
+    display: block;
+    width: 124px;
+    margin-bottom: 24px;
+    font-family: AvenirDemi;
+    color: #afafaf;
+  }
+  .shows__wrap-bottom {
+    width: 720px;
   }
   .shows__schedules-frame {
     width: 720px;
