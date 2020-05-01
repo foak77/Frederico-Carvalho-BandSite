@@ -151,7 +151,7 @@ body {
 }
 
 .heroS {
-  background-image: url("../assets/images/Photo-gallery-10.jpg");
+  background-image: url("../assets/images/Photo-gallery-11.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -162,26 +162,40 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
   width: 100%;
-  height: 183px;
+  height: 472px;
+}
+
+.heroS__titleS-uppper {
+  color: #e1e1e1;
+  width: 288px;
+  margin: 64px 0px 24px 16px;
+  font-family: AvenirBold;
 }
 
 .heroS__titleS {
   color: #e1e1e1;
-  width: 201px;
-  margin-left: 16px;
+  width: 288px;
+  margin: 0px 0px 64px 16px;
   font-family: AvenirBold;
+}
+
+.heroS__player {
+  background-color: gray;
+  margin: 0px 0px 0px 16px;
+  width: 288px;
+  height: 100px;
 }
 
 @media screen and (min-width: 768px) {
   .heroS {
-    height: 400px;
+    height: 670px;
   }
   .heroS__titleS {
     width: 550px;
@@ -424,7 +438,7 @@ body {
 }
 
 .shows__date {
-  font-family: AvenirRegular;
+  font-family: AvenirBold;
   margin-bottom: 24px;
 }
 
@@ -471,6 +485,8 @@ body {
   .shows__title {
     width: 720px;
     padding: 32px 0px 40px 0px;
+    font-size: 36px;
+    line-height: 44px;
     font-family: AvenirBold;
   }
   .shows__schedules-frame-wrap {
@@ -485,9 +501,9 @@ body {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -529,8 +545,6 @@ body {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
   .shows__date-wrap {
     width: 224px;
@@ -542,7 +556,7 @@ body {
     margin-bottom: 16px;
   }
   .shows__date {
-    font-family: AvenirRegular;
+    font-family: AvenirBold;
     margin-bottom: 24px;
   }
   .shows__venue-wrap {
@@ -585,11 +599,12 @@ body {
   }
   .shows__title {
     width: 176px;
-    padding: 32px 0px 40px 0px;
+    padding: 48px 0px 40px 0px;
     font-family: AvenirBold;
   }
   .shows__schedules-frame-wrap {
     width: 720px;
+    margin-top: 48px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -657,7 +672,7 @@ body {
     margin-bottom: 16px;
   }
   .shows__date {
-    font-family: AvenirRegular;
+    font-family: AvenirBold;
     margin-bottom: 24px;
   }
   .shows__venue-wrap {
