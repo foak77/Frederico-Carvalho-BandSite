@@ -1,19 +1,3 @@
-// var schedule =
-//   '<div class="shows__schedules-frame">' +
-//   '<div class="shows__date-wrap">' +
-//   '<h4 class="font-listContactInfoH4-mob shows__date-title">DATES</h4>' +
-//   '<h4 class="font-listContactInfoH4-mob shows__date"></h4>' +
-//   "</div>" +
-//   '<div class="shows__venue-wrap">' +
-//   '<h4 class="font-listContactInfoH4-mob shows__venue-title">VENUE</h4>' +
-//   '<h4 class="font-listContactInfoH4-mob shows__venue"></h4>' +
-//   "</div>" +
-//   '<div class="shows__location-wrap">' +
-//   '<h4 class="font-listContactInfoH4-mob shows__location-title">LOCATION</h4>' +
-//   '<h4 class="font-listContactInfoH4-mob shows__location"></h4>' +
-//   "</div>" +
-//   '<button class="btn shows__button">BUY TICKET</button>';
-
 var showSchedule = [
   {
     //position 0
