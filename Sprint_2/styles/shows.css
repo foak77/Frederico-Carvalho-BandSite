@@ -158,16 +158,18 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
   height: 472px;
 }
@@ -190,7 +192,7 @@ body {
   background-color: gray;
   margin: 0px 0px 0px 16px;
   width: 288px;
-  height: 100px;
+  height: 80px;
 }
 
 @media screen and (min-width: 768px) {
@@ -199,21 +201,23 @@ body {
   }
   .heroS__titleS {
     width: 570px;
-    margin-left: 24px;
+    margin: 0px 0px 48px 24px;
     font-size: 60px;
     line-height: 68px;
   }
   .heroS__titleS-uppper {
     color: #e1e1e1;
     width: 570px;
-    margin: 64px 0px 24px 16px;
+    margin: 160px 0px 24px 24px;
     font-family: AvenirBold;
+    font-size: 24px;
+    line-height: 32px;
   }
   .heroS__player {
     background-color: gray;
-    margin: 0px 0px 0px 16px;
-    width: 288px;
-    height: 100px;
+    margin: 0px 0px 0px 24px;
+    width: 436px;
+    height: 146px;
   }
 }
 
@@ -222,24 +226,24 @@ body {
     height: 670px;
   }
   .heroS__titleS {
-    width: 800px;
+    width: 580px;
     margin-left: 180px;
-    font-size: 78px;
+    font-size: 62px;
     line-height: 95px;
   }
   .heroS__titleS-uppper {
     color: #e1e1e1;
     width: 570px;
-    margin: 64px 0px 24px 180px;
+    margin: 160px 0px 24px 180px;
     font-family: AvenirBold;
-    font-size: 36px;
+    font-size: 24px;
     line-height: 44px;
   }
   .heroS__player {
     background-color: gray;
     margin: 0px 0px 0px 180px;
-    width: 288px;
-    height: 100px;
+    width: 400px;
+    height: 80px;
   }
 }
 
