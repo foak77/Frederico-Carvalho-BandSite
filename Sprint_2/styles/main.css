@@ -687,6 +687,10 @@ body {
 }
 
 .conversation__input-name {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 16px;
+  font-size: 16px;
   width: 224px;
   height: 48px;
   background-color: #e1e1e1;
@@ -718,6 +722,11 @@ body {
 }
 
 .conversation__form-input-comment {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 16px;
+  padding-left: 16px;
+  font-size: 16px;
   width: 224px;
   height: 96px;
   background-color: #e1e1e1;
@@ -751,6 +760,10 @@ body {
   height: 48px;
   width: 224px;
   margin-left: 65px;
+}
+
+.conversation__btn:hover {
+  background-color: #0065ad;
 }
 
 @media screen and (min-width: 768px) {
@@ -838,6 +851,9 @@ body {
     width: 160px;
     height: 48px;
   }
+  .conversation__btn:hover {
+    background-color: #0065ad;
+  }
 }
 
 @media screen and (min-width: 768px) and (min-width: 1200px) {
@@ -924,6 +940,9 @@ body {
     margin-left: 360px;
     width: 160px;
     height: 48px;
+  }
+  .conversation__btn:hover {
+    background-color: #0065ad;
   }
 }
 

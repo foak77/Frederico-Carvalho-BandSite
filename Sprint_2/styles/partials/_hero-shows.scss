@@ -4,74 +4,92 @@
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  align-items: center;
+  // flex-wrap: wrap;
   width: 100%;
   height: 472px;
   &__titleS-uppper {
     color: $text-field-border;
     width: 288px;
-    margin: 64px 0px 24px 16px;
+    margin: 64px 0px 24px 0px;
     font-family: AvenirBold;
+  }
+  &__Wrap-Heading-Player {
+    width: 288px;
   }
   &__titleS {
     color: $text-field-border;
     width: 288px;
-    margin: 0px 0px 64px 16px;
+    margin: 0px 0px 64px 0px;
     font-family: AvenirBold;
   }
   &__player {
     background-color: gray;
-    margin: 0px 0px 0px 16px;
+    margin: 0px 0px 0px 0px;
     width: 288px;
     height: 80px;
   }
   @include tablet {
     height: 670px;
-    &__titleS {
-      width: 570px;
-      margin: 0px 0px 48px 24px;
-      font-size: 60px;
-      line-height: 68px;
-    }
+    // align-items: flex-start;
     &__titleS-uppper {
       color: $text-field-border;
-      width: 570px;
-      margin: 160px 0px 24px 24px;
+      width: 720px;
+      margin: 96px 0px 32px 0px;
       font-family: AvenirBold;
       font-size: 24px;
       line-height: 32px;
     }
+    &__Wrap-Heading-Player {
+      width: 720px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+    &__titleS {
+      width: 570px;
+      margin: 0px 0px 32px 0px;
+      font-size: 60px;
+      line-height: 68px;
+    }
     &__player {
       background-color: gray;
-      margin: 0px 0px 0px 24px;
+      margin: 0px 0px 0px 0px;
       width: 436px;
       height: 146px;
     }
   }
   @include desktop {
-    height: 670px;
-    &__titleS {
-      width: 580px;
-      margin-left: 180px;
-      font-size: 62px;
-      line-height: 95px;
-    }
+    // height: 670px;
     &__titleS-uppper {
       color: $text-field-border;
-      width: 570px;
-      margin: 160px 0px 24px 180px;
+      width: 896px;
+      margin: 160px 0px 48px 0px;
       font-family: AvenirBold;
       font-size: 24px;
       line-height: 44px;
     }
+    &__Wrap-Heading-Player {
+      width: 896px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    &__titleS {
+      width: 896px;
+      margin: 0px 0px 0px 0px;
+      font-size: 42px;
+      line-height: 55px;
+    }
     &__player {
-      background-color: gray;
-      margin: 0px 0px 0px 180px;
-      width: 400px;
-      height: 80px;
+      // background-color: gray;
+      margin: 0px 0px 0px 64px;
+      width: 436px;
+      height: 146px;
     }
   }
 }

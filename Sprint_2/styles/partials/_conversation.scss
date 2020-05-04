@@ -18,7 +18,6 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    // border-bottom: 1px solid $text-field-border;
     margin-bottom: 24px;
   }
   &__label-name {
@@ -46,6 +45,9 @@
     // margin-right: 20px;
   }
   &__input-name {
+    box-sizing: border-box;
+    padding-left: 16px;
+    font-size: 16px;
     width: 224px;
     height: 48px;
     background-color: $text-field-border;
@@ -62,6 +64,10 @@
     margin-bottom: 8px;
   }
   &__form-input-comment {
+    box-sizing: border-box;
+    padding-top: 16px;
+    padding-left: 16px;
+    font-size: 16px;
     width: 224px;
     height: 96px;
     background-color: $text-field-border;
@@ -78,50 +84,10 @@
     height: 48px;
     width: 224px;
     margin-left: 65px;
+    &:hover {
+      background-color: $primary-cta-hover;
+    }
   }
-  // section
-  // &__section {
-  //   width: 288px;
-  //   border-top: 1px solid $text-field-border;
-  //   display: flex;
-  //   flex-direction: row;
-  //   justify-content: space-between;
-  //   align-items: flex-start;
-  //   padding-top: 24px;
-  //   margin-bottom: 24px;
-  // }
-  // &__section-left {
-  //   width: 48px;
-  //   display: flex;
-  //   flex-direction: row;
-  //   justify-content: flex-start;
-  //   align-items: flex-start;
-  // }
-  // &__output-img {
-  //   width: 38px;
-  //   height: 38px;
-  //   background-color: gray;
-  //   border-radius: 50px;
-  // }
-  // &__section-right {
-  //   width: 234px;
-  //   display: flex;
-  //   flex-direction: column;
-  //   justify-content: flex-start;
-  //   align-items: center;
-  // }
-  // &__section-right-nameDate {
-  //   width: 234px;
-  //   display: flex;
-  //   flex-direction: row;
-  //   margin-bottom: 16px;
-  //   justify-content: space-between;
-  //   align-items: center;
-  //   font-family: AvenirDemi;
-  // }
-  // &__output-date {
-  //   color: #afafaf;
-  // }
   @include tablet {
     &__title {
       // width: 90%;
@@ -138,7 +104,6 @@
       flex-direction: column;
       justify-content: flex-start;
       align-items: flex-start;
-      // border-bottom: 1px solid $text-field-border;
       margin-bottom: 24px;
     }
     &__label-name {
@@ -163,7 +128,6 @@
       border-radius: 50px;
       width: 48px;
       height: 48px;
-      // margin-right: 20px;
     }
     &__input-name {
       width: 460px;
@@ -191,52 +155,11 @@
       margin-left: 360px;
       width: 160px;
       height: 48px;
+      &:hover {
+        background-color: $primary-cta-hover;
+      }
     }
-    // // section
-    // &__section {
-    //   width: 520px;
-    //   border-top: 1px solid $text-field-border;
-    //   display: flex;
-    //   flex-direction: row;
-    //   justify-content: space-between;
-    //   align-items: flex-start;
-    //   padding-top: 24px;
-    //   margin-bottom: 24px;
-    // }
-    // &__section-left {
-    //   width: 48px;
-    //   display: flex;
-    //   flex-direction: row;
-    //   justify-content: flex-start;
-    //   align-items: flex-start;
-    // }
-    // &__output-img {
-    //   width: 38px;
-    //   height: 38px;
-    //   background-color: gray;
-    //   border-radius: 50px;
-    // }
-    // &__section-right {
-    //   width: 460px;
-    //   display: flex;
-    //   flex-direction: column;
-    //   justify-content: flex-start;
-    //   align-items: center;
-    // }
-    // &__section-right-nameDate {
-    //   width: 460px;
-    //   display: flex;
-    //   flex-direction: row;
-    //   margin-bottom: 16px;
-    //   justify-content: space-between;
-    //   align-items: center;
-    //   font-family: AvenirDemi;
-    // }
-    // &__output-date {
-    //   color: #afafaf;
-    // }
     @include desktop {
-      // background-color: red;
       &__title {
         // width: 90%;
         width: 1080px;
@@ -252,7 +175,6 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        // border-bottom: 1px solid $text-field-border;
         margin-bottom: 24px;
       }
       &__label-name {
@@ -277,7 +199,6 @@
         border-radius: 50px;
         width: 48px;
         height: 48px;
-        // margin-right: 20px;
       }
       &__input-name {
         width: 460px;
@@ -305,50 +226,10 @@
         margin-left: 360px;
         width: 160px;
         height: 48px;
+        &:hover {
+          background-color: $primary-cta-hover;
+        }
       }
-      // // section
-      // &__section {
-      //   width: 520px;
-      //   border-top: 1px solid $text-field-border;
-      //   display: flex;
-      //   flex-direction: row;
-      //   justify-content: space-between;
-      //   align-items: flex-start;
-      //   padding-top: 24px;
-      //   margin-bottom: 24px;
-      // }
-      // &__section-left {
-      //   width: 48px;
-      //   display: flex;
-      //   flex-direction: row;
-      //   justify-content: flex-start;
-      //   align-items: flex-start;
-      // }
-      // &__output-img {
-      //   width: 38px;
-      //   height: 38px;
-      //   background-color: gray;
-      //   border-radius: 50px;
-      // }
-      // &__section-right {
-      //   width: 460px;
-      //   display: flex;
-      //   flex-direction: column;
-      //   justify-content: flex-start;
-      //   align-items: center;
-      // }
-      // &__section-right-nameDate {
-      //   width: 460px;
-      //   display: flex;
-      //   flex-direction: row;
-      //   margin-bottom: 16px;
-      //   justify-content: space-between;
-      //   align-items: center;
-      //   font-family: AvenirDemi;
-      // }
-      // &__output-date {
-      //   color: #afafaf;
-      // }
     }
   }
 }
