@@ -1,0 +1,151 @@
+.about {
+  width: 100%;
+  background-color: $text-field-background-fill;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__title {
+    width: 90%;
+    // width: 288px;
+    padding: 32px 0px 24px 0px;
+    font-family: AvenirBold;
+  }
+  &__img {
+    width: 90%;
+    // width: 288px;
+    height: auto;
+    // height: 162px;
+    margin: 0px auto 24px auto;
+  }
+  &__quote {
+    margin: 0px auto 32px auto;
+    width: 90%;
+    // width: 288px;
+    font-family: AvenirBold;
+  }
+  &__quote-name {
+    margin: 0px auto 40px auto;
+    width: 90%;
+    // width: 288px;
+    font-family: AvenirDemi;
+  }
+  &__theband-title {
+    margin: 0px auto 24px auto;
+    width: 90%;
+    // width: 288px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-family: AvenirBold;
+  }
+  &__text-wrapper {
+    margin: 0px auto 40px auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+  &__paragraph {
+    width: 90%;
+    // width: 288px;
+    font-family: AvenirRegular;
+    &--first {
+      font-family: AvenirRegular;
+      width: 90%;
+      // width: 288px;
+      margin-bottom: 24px;
+    }
+  }
+  @include tablet {
+    &__title {
+      width: 720px;
+      padding: 32px 0px 24px 0px;
+      font-size: 36px;
+      line-height: 44px;
+    }
+    &__img {
+      width: 720px;
+      height: 362px;
+    }
+    &__quote {
+      width: 720px;
+      font-size: 24px;
+      line-height: 32px;
+    }
+    &__quote-name {
+      width: 720px;
+    }
+    &__theband-title {
+      margin-bottom: 24px;
+      width: 720px;
+      font-size: 24px;
+      line-height: 32px;
+    }
+    &__text-wrapper {
+      margin: 0px auto 40px auto;
+      width: 720px;
+      justify-content: space-between;
+    }
+    &__paragraph {
+      width: 348px;
+      font-size: 14px;
+      line-height: 22px;
+      &--first {
+        width: 348px;
+        margin-right: 24px;
+        margin-bottom: 24px;
+        font-size: 14px;
+        line-height: 22px;
+      }
+    }
+  }
+  @include desktop {
+    &__title {
+      width: 1080px;
+      padding: 48px 0px 48px 0px;
+      font-size: 36px;
+      line-height: 44px;
+    }
+    &__img {
+      width: 896px;
+      height: 450px;
+      margin-bottom: 48px;
+    }
+    &__quote {
+      margin-bottom: 40px;
+      width: 896px;
+      font-size: 24px;
+      line-height: 32px;
+      font-family: AvenirBold;
+    }
+    &__quote-name {
+      margin-bottom: 56px;
+      width: 896px;
+      font-size: 16px;
+      line-height: 24px;
+    }
+    &__theband-title {
+      margin-bottom: 24px;
+      width: 896px;
+      font-size: 24px;
+      line-height: 32px;
+    }
+    &__text-wrapper {
+      margin: 0px auto 40px auto;
+      width: 896px;
+    }
+    &__paragraph {
+      width: 420px;
+      font-size: 14px;
+      line-height: 22px;
+      &--first {
+        width: 420px;
+        margin-right: 24px;
+        margin-bottom: 24px;
+        font-size: 14px;
+        line-height: 22px;
+      }
+    }
+  }
+}

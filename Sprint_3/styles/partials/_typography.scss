@@ -1,0 +1,68 @@
+@font-face {
+  font-family: "AvenirRegular";
+  src: url("../assets/font/AvenirNextProLT/LinotypeAvenirNextLTProRegular.otf");
+}
+@font-face {
+  font-family: "AvenirDemi";
+  src: url("../assets/font/AvenirNextProLT/LinotypeAvenirNextLTProDemi.otf");
+}
+@font-face {
+  font-family: "AvenirBold";
+  src: url("../assets/font/AvenirNextProLT/LinotypeAvenirNextLTProBold.otf");
+}
+@font-face {
+  font-family: "AvenirHeavy";
+  src: url("../assets/font/AvenirNextProLT/LinotypeAvenirNextLTProHeavy.otf");
+}
+
+body {
+  font-family: "AvenirRegular", Fallback, sans-serif;
+  color: #323232;
+}
+
+// DESKTOP / TABLET FONT SIZE
+.font-heroHeader {
+  font-size: 60px;
+  line-height: 68px;
+}
+.font-headerH1 {
+  font-size: 36px;
+  line-height: 44px;
+}
+.font-headerH2 {
+  font-size: 24px;
+  line-height: 32px;
+}
+.font-subheaderH3 {
+  font-size: 16px;
+  line-height: 24px;
+}
+.font-paragraphCcommentH4 {
+  font-size: 14px;
+  line-height: 22px;
+}
+.font-listContactInfoH5 {
+  font-size: 14px;
+  line-height: 20px;
+}
+// MOBILE FONT SIZE
+.font-headerH1-mob {
+  font-size: 24px;
+  line-height: 32px;
+}
+.font-subheaderH2-mob {
+  font-size: 14px;
+  line-height: 22px;
+}
+.font-paragraphH4-mob {
+  font-size: 13px;
+  line-height: 18px;
+}
+.font-listContactInfoH4-mob {
+  font-size: 13px;
+  line-height: 18px;
+}
+.font-labelH5 {
+  font-size: 12px;
+  line-height: 20px;
+}

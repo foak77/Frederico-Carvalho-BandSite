@@ -1,0 +1,235 @@
+.conversation {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $text-field-background-fill;
+  &__title {
+    // width: 90%;
+    width: 288px;
+    padding: 32px 0px 40px 0px;
+    font-family: AvenirBold;
+  }
+  &__form {
+    box-sizing: border-box;
+    width: 288px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 24px;
+  }
+  &__label-name {
+    color: $text-label-style-color;
+    margin-left: 64px;
+    font-family: AvenirDemi;
+    margin-bottom: 8px;
+  }
+  &__form-input-name {
+    width: 288px;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+    margin-bottom: 24px;
+  }
+  &__img {
+    background-image: url(../assets/images/Mohan-muruge.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50px;
+    width: 48px;
+    height: 48px;
+    // margin-right: 20px;
+  }
+  &__input-name {
+    box-sizing: border-box;
+    padding-left: 16px;
+    font-size: 16px;
+    width: 224px;
+    height: 48px;
+    background-color: $text-field-border;
+    border: 1px solid $text-label-style-color;
+    border-radius: 4px;
+    &::placeholder {
+      padding-left: 16px;
+    }
+  }
+  &__label-comment {
+    color: $text-label-style-color;
+    margin-left: 64px;
+    font-family: AvenirDemi;
+    margin-bottom: 8px;
+  }
+  &__form-input-comment {
+    box-sizing: border-box;
+    padding-top: 16px;
+    padding-left: 16px;
+    font-size: 16px;
+    width: 224px;
+    height: 96px;
+    background-color: $text-field-border;
+    border: 1px solid $text-label-style-color;
+    border-radius: 4px;
+    margin-left: 64px;
+    margin-bottom: 24px;
+    &::placeholder {
+      padding-top: 16px;
+      padding-left: 16px;
+    }
+  }
+  &__btn {
+    height: 48px;
+    width: 224px;
+    margin-left: 65px;
+    &:hover {
+      background-color: $primary-cta-hover;
+    }
+  }
+  @include tablet {
+    &__title {
+      // width: 90%;
+      width: 720px;
+      padding: 32px 0px 40px 0px;
+      font-size: 36px;
+      line-height: 44px;
+      font-family: AvenirBold;
+    }
+    &__form {
+      box-sizing: border-box;
+      width: 520px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-bottom: 24px;
+    }
+    &__label-name {
+      color: $text-label-style-color;
+      margin-left: 58px;
+      font-family: AvenirDemi;
+      margin-bottom: 8px;
+    }
+    &__form-input-name {
+      width: 520px;
+      height: 48px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-self: center;
+      margin-bottom: 24px;
+    }
+    &__img {
+      background-image: url(../assets/images/Mohan-muruge.jpg);
+      background-position: center;
+      background-size: cover;
+      border-radius: 50px;
+      width: 48px;
+      height: 48px;
+    }
+    &__input-name {
+      width: 460px;
+      height: 48px;
+      background-color: $text-field-border;
+      border: 1px solid $text-label-style-color;
+      border-radius: 4px;
+    }
+    &__label-comment {
+      color: $text-label-style-color;
+      margin-left: 58px;
+      font-family: AvenirDemi;
+      margin-bottom: 8px;
+    }
+    &__form-input-comment {
+      width: 460px;
+      height: 96px;
+      background-color: $text-field-border;
+      border: 1px solid $text-label-style-color;
+      border-radius: 4px;
+      margin-left: 58px;
+      margin-bottom: 24px;
+    }
+    &__btn {
+      margin-left: 360px;
+      width: 160px;
+      height: 48px;
+      &:hover {
+        background-color: $primary-cta-hover;
+      }
+    }
+    @include desktop {
+      &__title {
+        // width: 90%;
+        width: 1080px;
+        padding: 32px 0px 40px 0px;
+        font-size: 36px;
+        line-height: 44px;
+        font-family: AvenirBold;
+      }
+      &__form {
+        box-sizing: border-box;
+        width: 520px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 24px;
+      }
+      &__label-name {
+        color: $text-label-style-color;
+        margin-left: 58px;
+        font-family: AvenirDemi;
+        margin-bottom: 8px;
+      }
+      &__form-input-name {
+        width: 520px;
+        height: 48px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-self: center;
+        margin-bottom: 24px;
+      }
+      &__img {
+        background-image: url(../assets/images/Mohan-muruge.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 50px;
+        width: 48px;
+        height: 48px;
+      }
+      &__input-name {
+        width: 460px;
+        height: 48px;
+        background-color: $text-field-border;
+        border: 1px solid $text-label-style-color;
+        border-radius: 4px;
+      }
+      &__label-comment {
+        color: $text-label-style-color;
+        margin-left: 58px;
+        font-family: AvenirDemi;
+        margin-bottom: 8px;
+      }
+      &__form-input-comment {
+        width: 460px;
+        height: 96px;
+        background-color: $text-field-border;
+        border: 1px solid $text-label-style-color;
+        border-radius: 4px;
+        margin-left: 58px;
+        margin-bottom: 24px;
+      }
+      &__btn {
+        margin-left: 360px;
+        width: 160px;
+        height: 48px;
+        &:hover {
+          background-color: $primary-cta-hover;
+        }
+      }
+    }
+  }
+}

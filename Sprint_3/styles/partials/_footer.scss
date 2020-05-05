@@ -1,0 +1,175 @@
+.footer {
+  width: 100%;
+  background-color: $navigation-background-fill;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  &__top {
+    width: 90%;
+    // width: 288px;
+    padding: 48px 0px 40px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+  &__title {
+    color: $text-field-background-fill;
+    width: 90%;
+    // width: 288px;
+    font-family: AvenirBold;
+  }
+  &__social {
+    // width: 288px;
+    width: 90%;
+    padding-top: 24px;
+  }
+  &__social-icons {
+    margin-right: 32px;
+  }
+  &__logo {
+    width: 120px;
+    height: 24px;
+    display: none;
+  }
+  &__mid {
+    width: 90%;
+    // width: 288px;
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    &--col1 {
+      width: 288px;
+      margin-right: 24px;
+      margin-bottom: 24px;
+    }
+    &--col2 {
+      width: 288px;
+      margin-right: 24px;
+      margin-bottom: 24px;
+    }
+    &--col3 {
+      width: 288px;
+    }
+  }
+  &__text {
+    color: $text-field-background-fill;
+    font-family: AvenirRegular;
+    &:first-child {
+      font-family: AvenirBold;
+    }
+    &:nth-child(2) {
+      font-family: AvenirBold;
+      margin-bottom: 24px;
+    }
+    &:nth-child(3) {
+      font-family: AvenirRegular;
+    }
+    &:nth-child(4) {
+      font-family: AvenirRegular;
+      margin-bottom: 24px;
+    }
+    &:nth-child(5) {
+      font-family: AvenirBold;
+    }
+  }
+  &__copyright {
+    color: $text-field-background-fill;
+    width: 90%;
+    // width: 288px;
+    margin-bottom: 32px;
+  }
+  &__mailto {
+    font-family: AvenirRegular;
+    color: $text-field-background-fill;
+    text-decoration: none;
+    &:hover {
+      color: $primary-cta-and-text-link;
+    }
+  }
+  @include tablet {
+    &__top {
+      width: 720px;
+    }
+    &__title {
+      width: 224px;
+    }
+    &__social {
+      width: 320px;
+      padding: 0px 0px 0px 56px;
+    }
+    &__logo {
+      display: flex;
+    }
+    &__mid {
+      width: 720px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      &--col1 {
+        width: 224px;
+        margin-right: 24px;
+      }
+      &--col2 {
+        width: 224px;
+        margin-right: 24px;
+      }
+      &--col3 {
+        width: 224px;
+      }
+    }
+    &__text {
+      font-family: AvenirRegular;
+    }
+    &__copyright {
+      width: 720px;
+    }
+    @include desktop {
+      .footer {
+        align-items: center;
+        &__top {
+          width: 1080px;
+          padding-top: 48px;
+          padding-bottom: 56px;
+        }
+        &__title {
+          color: $text-field-background-fill;
+          width: 220px;
+        }
+        &__social {
+          width: 684px;
+          padding-top: 0px;
+        }
+        &__logo {
+          display: flex;
+        }
+        &__mid {
+          width: 1080px;
+          margin-bottom: 40px;
+          &--col1 {
+            width: 276px;
+          }
+          &--col2 {
+            width: 276px;
+          }
+          &--col3 {
+            width: 276px;
+          }
+        }
+        &__text--contact-name {
+          margin-bottom: 24px;
+        }
+        &__text--address {
+          margin-bottom: 24px;
+        }
+        &__copyright {
+          width: 1080px;
+          color: $text-field-background-fill;
+        }
+      }
+    }
+  }
+}
