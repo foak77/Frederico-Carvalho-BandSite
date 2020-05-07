@@ -1046,6 +1046,30 @@ body {
 
 .output__output-date {
   color: #afafaf;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.output__output-delete {
+  background-image: url("../assets/images/trash.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 15px;
+  border: 0px;
+  margin-left: 10px;
+  cursor: pointer;
 }
 
 .output__output-txt {

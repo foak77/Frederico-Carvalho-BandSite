@@ -46,6 +46,21 @@
   }
   &__output-date {
     color: #afafaf;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  &__output-delete {
+    background-image: url("../assets/images/trash.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+    border: 0px;
+    margin-left: 10px;
+    cursor: pointer;
   }
   &__output-txt {
     text-align: left;
