@@ -9,7 +9,7 @@ axios.get("https://project-1-api.herokuapp.com/register").then((resp) => {
 var peoplesComments = [];
 //CREATING THE ARRAYS FOR THE DATA COMMING FROM THE API
 var comments = [];
-//GET REQUET FROM AXIOS - WILL RETURN A PROMISSE FROM THE API
+//GET REQUEST FROM AXIOS - WILL RETURN A PROMISSE FROM THE API
 axios
   .get("https://project-1-api.herokuapp.com/comments?api_key=key")
   .then((resp) => {
@@ -31,22 +31,12 @@ axios
       let diff = moment(data).fromNow();
       let cD = dia + "/" + mes + "/" + ano + " ..." + diff;
       /// mostrar na tela
-      cP = "pH";
+
+      cP = "pH"; // cL + cP PHOTO + LIKE
+
       commentPresentation(cN, cD, cI, cP);
     }
   });
-
-//DATE
-let data = new Date();
-console.log(data);
-let dia = data.getDate();
-let mes = data.getMonth();
-let ano = data.getFullYear();
-
-var cD = dia + "/" + mes + "/" + ano;
-var cN;
-var cI;
-var cP = "PH";
 
 // SELECTING THE FORM AND ASSIGNING INTO A VARIABLE
 var formulario = document.querySelector(".conversation__form");
@@ -62,7 +52,38 @@ formulario.addEventListener("submit", function (e) {
 
   //ASSIGNING THE "VALUE" FROM THE INPUT(html) INTO VARIABLES
   cN = SectionName.value;
-  cI = SectionComment.value;
+  cCo = SectionComment.value;
+
+  //POST of THE POST(COMMENT) SENT TO SERVER
+  axios
+    .post("https://project-1-api.herokuapp.com/comments?api_key=key", {
+      name: cN,
+      comment: cCo,
+    })
+    .then((resp) => {
+      comment = resp.data;
+      var cN = comment.name;
+      var cCo = comment.comment;
+      var cI = comment.id;
+      var cL = comment.likes;
+      var cT = comment.timestamp;
+
+      var data = new Date(cT);
+      var dia = data.getDate();
+      var mes = data.getMonth() + 1;
+      var ano = data.getFullYear();
+
+      dateNow = Date.now();
+      var diff = moment(data).fromNow();
+
+      let cD = dia + "/" + mes + "/" + ano + " ..." + diff;
+
+      cP = "pH"; // cL + cP PHOTO + LIKE
+      commentPresentation(cN, cD, cCo, cP);
+    })
+
+    //
+    .catch((resp) => console.log("MISTAKE FROM RESPONSE " + resp));
 
   commentPresentation(cN, cD, cI, cP);
   formulario.reset();
@@ -83,12 +104,12 @@ function commentPresentation(
   conversation.classList.add("output__section");
   out_put.prepend(conversation);
 
-  //CREATING THE LEFT ARE - FOR THE IMAGE "ROUND DIV" - CHILD OF CONVERSATION
+  //CREATING THE LEFT AREA - FOR THE IMAGE "ROUND DIV" - CHILD OF CONVERSATION
   let Left = document.createElement("div");
   Left.classList.add("output__section-left");
   conversation.appendChild(Left);
 
-  //IMMAGE DIV - CHILD OF THE LEFT
+  //IMAGE DIV - CHILD OF THE LEFT
   let outputImg = document.createElement("div");
   outputImg.classList.add("output__output-img");
   Left.appendChild(outputImg); //picture of the guy
@@ -120,7 +141,7 @@ function commentPresentation(
   DeleteBtn.classList.add("output__output-delete");
   SectionDate.appendChild(DeleteBtn);
 
-  //CREATING THE COOMENT DIV - CHILD OF RIGHT - WILL RECEIVE THE VALUE OF THE INPUT "commentInfo"
+  //CREATING THE COMMENT DIV - CHILD OF RIGHT - WILL RECEIVE THE VALUE OF THE INPUT "commentInfo"
   let Comments = document.createElement("h4");
   Comments.classList.add("output__output-txt", "font-paragraphH4-mob");
   Right.appendChild(Comments);
