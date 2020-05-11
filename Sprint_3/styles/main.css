@@ -1060,18 +1060,6 @@ body {
           align-items: center;
 }
 
-.output__output-delete {
-  background-image: url("../assets/images/trash.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 15px;
-  height: 15px;
-  border: 0px;
-  margin-left: 10px;
-  cursor: pointer;
-}
-
 .output__output-txt {
   text-align: left;
 }

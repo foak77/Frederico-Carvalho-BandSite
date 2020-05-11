@@ -579,14 +579,14 @@ body {
   }
   .shows__date-wrap-MOB {
     display: block;
-    width: 224px;
+    width: 214px;
     margin-bottom: 24px;
     font-family: AvenirDemi;
     color: #afafaf;
   }
   .shows__venue-wrap-MOB {
     display: block;
-    width: 124px;
+    width: 148px;
     margin-bottom: 24px;
     font-family: AvenirDemi;
     color: #afafaf;
@@ -614,9 +614,9 @@ body {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     border-bottom: 1px solid #e1e1e1;
   }
   .shows__date-wrap {
@@ -647,6 +647,7 @@ body {
   }
   .shows__location-wrap {
     width: 124px;
+    padding-left: 30px;
   }
   .shows__location-title {
     display: none;
@@ -706,7 +707,7 @@ body {
   }
   .shows__venue-wrap-MOB {
     display: block;
-    width: 124px;
+    width: 153px;
     margin-bottom: 24px;
     font-family: AvenirDemi;
     color: #afafaf;
@@ -734,9 +735,9 @@ body {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     border-bottom: 1px solid #e1e1e1;
@@ -784,7 +785,7 @@ body {
     font-family: AvenirBold;
     width: 160px;
     height: 48px;
-    margin: 0px 0px 8px 88px;
+    margin: 0px 0px 8px 58px;
   }
   .shows__button:hover {
     background-color: #0065ad;

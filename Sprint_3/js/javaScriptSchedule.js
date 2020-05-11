@@ -4,29 +4,33 @@ let scheduleFrame = document.querySelector(".shows__schedules-frame");
 var key;
 axios.get("https://project-1-api.herokuapp.com/register").then((resp) => {
   keydata = resp.data;
+  //console.log(resp);
   key = keydata.api_key;
-  console.log(keydata);
+  //console.log(keydata);
 });
 // GET SHOW DATES
 var showdates = [];
+
 axios
   .get("https://project-1-api.herokuapp.com/showdates?api_key=key")
   .then((resp) => {
     showdates = resp.data;
-
+    //console.log(resp);
     for (i = 0; i <= showdates.length - 1; i++) {
-      let ind = i;
+      //let ind = i;
       // THE iD IDENTIFIES THE SCHEDULE
       let tP = showdates[i].id;
       let dS = showdates[i].date;
       let vS = showdates[i].place;
       let lS = showdates[i].location;
+
       showSchedulePresentation(dS, vS, lS, "BUY TICKET");
     }
   });
 
 // ____________________________________________
 
+//BUY TICKET - STRING / ticketProcedure
 function showSchedulePresentation(
   dataShow,
   venueShow,
@@ -96,48 +100,3 @@ function showSchedulePresentation(
   wrapping.appendChild(buyTickedBtn);
   //future function to buy ticket event click/submit
 }
-// _____________________________________________________
-
-//   {_______________________________________
-//     // position 0
-//     datei: "Mon Dec 17 2018",
-//     venue: "Ronald Lane",
-//     location: "San Fancisco, CA",
-//     tickets: "BUY - SELLIN FAST",
-//   },
-//   {
-//     // position 1
-//     date: "Tue Jul 18 2019",
-//     venue: "Pier 3 East",
-//     location: "San Fancisco, CA",
-//     tickets: "- SOLD OUT -",
-//   },
-//   {
-//     // position 2
-//     date: "Fri Jul 22 2019",
-//     venue: "View Loungue",
-//     location: "San Fancisco, CA",
-//     tickets: "BUY - CHARITY EVENT",
-//   },
-//   {
-//     // position 3
-//     date: "Sat Aug 12 2019",
-//     venue: "Hyatt Agency",
-//     location: "San Fancisco, CA",
-//     tickets: "BUY TICKET",
-//   },
-//   {
-//     // position 4
-//     date: "Fri Sep 05 2019",
-//     venue: "Moscow Center",
-//     location: "San Fancisco, CA",
-//     tickets: "BUY - AWESOME MUSIC/VENUE",
-//   },
-//   {
-//     // position 5
-//     date: "Wed Aug 11 2019",
-//     venue: "Pres Club",
-//     location: "San Fancisco, CA",
-//     tickets: "BUY TICKET",
-//   },
-// }

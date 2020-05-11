@@ -2,39 +2,40 @@
 var key;
 axios.get("https://project-1-api.herokuapp.com/register").then((resp) => {
   resposta = resp.data;
-  console.log(resposta.api_key);
+  //console.log(resp);
   key = resposta.api_key;
 });
 
-var peoplesComments = [];
+// var peoplesComments = [];
 //CREATING THE ARRAYS FOR THE DATA COMMING FROM THE API
 var comments = [];
 //GET REQUEST FROM AXIOS - WILL RETURN A PROMISSE FROM THE API
 axios
   .get("https://project-1-api.herokuapp.com/comments?api_key=key")
   .then((resp) => {
+    // OBJECT SENT FROM THE SERVER ASSIGNED IN COMMENTS ARRAY
     comments = resp.data;
-
+    // ITERATION FOR EACH ELEMENT IN THE ARRAY COMMENTS
     for (i = 0; i <= comments.length - 1; i++) {
-      let ind = i;
+      // let ind = i;
       var cN = comments[i].name;
       var cI = comments[i].comment;
       var cId = comments[i].id;
       var cL = comments[i].likes;
-      var cT = comments[i].timestamp;
+      var cT = comments[i].timestamp; // 1 JAN 1970 (NUMBER TYPEOF)
 
-      let data = new Date(cT);
-      let dia = data.getDate();
-      let mes = data.getMonth();
-      let ano = data.getFullYear();
-      let dateNow = Date.now();
-      let diff = moment(data).fromNow();
-      let cD = dia + "/" + mes + "/" + ano + " ..." + diff;
+      let data = new Date(cT); // DIA / MES / ANO / AND A BUNCH OF NUMBERS RELATED TO THE DATE
+      //let dia = data.getDate();
+      //let mes = data.getMonth() + 1;
+      //let ano = data.getFullYear();
+      //let dateNow = Date.now();
+      let diff = moment(data).fromNow(); //ACTUAL DATE - DATE TIMESTAMP
+      let cD = diff; // dia + "/" + mes + "/" + ano + " ..." +
       /// mostrar na tela
 
       cP = "pH"; // cL + cP PHOTO + LIKE
 
-      commentPresentation(cN, cD, cI, cP);
+      commentPresentation(cN, cD, cI, cP); //CALLING THE FUNCTION
     }
   });
 
@@ -44,15 +45,15 @@ var formulario = document.querySelector(".conversation__form");
 formulario.addEventListener("submit", function (e) {
   e.preventDefault();
 
-  //SELECTING THE ELEMENTS IN THE DOM AND ASSIGNING INTO VARIABLES
+  //SELECTING THE ELEMENTS IN THE DOM AND ASSIGNING INTO VARIABLES - "INPUTS"
   let SectionName = document.querySelector(".conversation__input-name");
   let SectionComment = document.querySelector(
     ".conversation__form-input-comment"
   );
 
   //ASSIGNING THE "VALUE" FROM THE INPUT(html) INTO VARIABLES
-  cN = SectionName.value;
-  cCo = SectionComment.value;
+  let cN = SectionName.value;
+  let cCo = SectionComment.value;
 
   //POST of THE POST(COMMENT) SENT TO SERVER
   axios
@@ -61,7 +62,9 @@ formulario.addEventListener("submit", function (e) {
       comment: cCo,
     })
     .then((resp) => {
-      comment = resp.data;
+      // ANSWER FROM THE SERVER
+
+      let comment = resp.data;
       var cN = comment.name;
       var cCo = comment.comment;
       var cI = comment.id;
@@ -69,24 +72,25 @@ formulario.addEventListener("submit", function (e) {
       var cT = comment.timestamp;
 
       var data = new Date(cT);
-      var dia = data.getDate();
-      var mes = data.getMonth() + 1;
-      var ano = data.getFullYear();
+      //let dia = data.getDate();
+      //let mes = data.getMonth() + 1;
+      //let ano = data.getFullYear();
 
-      dateNow = Date.now();
-      var diff = moment(data).fromNow();
+      //dateNow = Date.now();
+      var diff = moment(data).fromNow(); // TIMESTAMP - ACTUAL DATE
 
-      let cD = dia + "/" + mes + "/" + ano + " ..." + diff;
+      var cD = diff; //dia + "/" + mes + "/" + ano + " ..." +
 
       cP = "pH"; // cL + cP PHOTO + LIKE
       commentPresentation(cN, cD, cCo, cP);
     })
 
-    //
-    .catch((resp) => console.log("MISTAKE FROM RESPONSE " + resp));
-
-  commentPresentation(cN, cD, cI, cP);
-  formulario.reset();
+    // ALERT FORM RESP
+    .catch((resp) =>
+      alert("MISTAKE FROM RESPONSE: NAME OR COMMENT NOT INCLUDED")
+    );
+  //commentPresentation(cN, cD, cI, cP);
+  formulario.reset(); // TO CLEAN THE INPUT AFTER SUBMIT CLICK
 });
 
 // FUNCTION OF PRESENTATION
@@ -96,7 +100,7 @@ function commentPresentation(
   commentInfo, //cI
   commentPhoto //cP
 ) {
-  //SELECTIN THE DIV RIGHT UNDERNEATH THE FORM
+  //SELECTING THE DIV RIGHT UNDERNEATH THE FORM
   let out_put = document.querySelector(".output");
 
   //CREATING THE SECTION AND PREPENDING (NOT APPENDING) TO MAKE THE COMMENTS APPEAR ON TOP
